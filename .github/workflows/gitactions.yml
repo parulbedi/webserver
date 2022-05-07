@@ -1,0 +1,12 @@
+name: installing ansible via Github Actions
+on: push
+jobs:
+  installing_ansible:
+    runs-on: self-hosted
+    steps:
+    - name: installing ansible via github actions
+      run: |
+        ls -al
+        sudo apt-get update
+        sudo apt-get upgrade
+        sudo apt install ansible
