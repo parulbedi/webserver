@@ -7,6 +7,4 @@ jobs:
     - name: installing ansible via github actions
       run: |
         ls -al
-        sudo apt-get update
-        sudo apt-get upgrade
-        sudo apt install ansible -y
+        sudo python -m pip install ansible -y
