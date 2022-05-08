@@ -1,0 +1,8 @@
+name: installing python on managed node
+on: workflow_call
+jobs:
+  installing_python:
+     runs-on: [self-hosted, managed-node]
+     steps:
+     - name: installing python via github actions
+       run: sudo apt install python -y
