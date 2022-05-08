@@ -1,3 +1,5 @@
+name: installing ansible from a seprate yml
+on: workflow_call
 jobs:
   installing_ansible:
     runs-on: self-hosted
