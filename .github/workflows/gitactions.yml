@@ -1,11 +1,5 @@
 name: installing ansible via Github Actions
-on: push
+on: push  
 jobs:
-  installing_ansible:
-    runs-on: self-hosted
-    steps:
-    - name: installing ansible via github actions
-      run: |
-        sudo apt install software-properties-common
-        sudo add-apt-repository --yes --update ppa:ansible/ansible
-        sudo apt install ansible -y
+  reusing_another_workflow:
+    uses: ./.github/workflows/installing_ansible.yml
