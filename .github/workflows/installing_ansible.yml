@@ -6,7 +6,8 @@ jobs:
     steps:
     - name: installing ansible via github actions
       run: |
-        cd .. && cd ..
+        cd ..
+        cd ..
         sudo rm -r /var/lib/dpkg/updates/*
         sudo apt install software-properties-common
         sudo add-apt-repository --yes --update ppa:ansible/ansible
