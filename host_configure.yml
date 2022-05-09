@@ -1,5 +1,5 @@
 name: configuring host
-on push:
+on: push
 runs-on: self-hosted
   jobs:
   configuring_host:
