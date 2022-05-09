@@ -1,13 +1,12 @@
 name: installing ansible via Github Actions
 on: push  
 jobs:
-  reusing_install_ansible_workflow:
+  install_ansible_workflow:
     uses: ./.github/workflows/installing_ansible.yml
     
-  reusing_install_python_workflow:
-    needs: reusing_install_ansible_workflow
+  install_python_workflow:
     uses: ./.github/workflows/installing_python_on_managed_node.yml
     
-  running_playbook:
-    needs: reusing_install_python_workflow
+  adding_host:
+    needs: install_ansible_workflow
     uses: ./.github/workflows/adding_host.yml
