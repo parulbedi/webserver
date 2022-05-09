@@ -6,4 +6,3 @@ jobs:
     steps:
     - name: Adding host to ansible control node
       run: |
-        sudo vi /etc/ansible/hosts
