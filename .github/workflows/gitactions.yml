@@ -8,4 +8,4 @@ jobs:
     uses: ./.github/workflows/installing_python_on_managed_node.yml
     
   running_playbook:
-    uses: ./.github/workflows/running_playbook.yml
+    uses: ./.github/workflows/adding_host.yml
