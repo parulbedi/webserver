@@ -1,6 +1,8 @@
 name: configuring host
-on: push
-
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
 
   jobs:
   configuring_host:
