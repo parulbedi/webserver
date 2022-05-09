@@ -1,11 +1,12 @@
 name: configuring host
 on: push
-runs-on: self-hosted
+
 
   jobs:
   configuring_host:
-    steps:
-    uses: ./.github/workflows/gitactions.yml
+    runs-on: self-hosted
+      steps:
+      uses: ./.github/workflows/gitactions.yml
 #       run: |
 #         cd ~
 #         sudo chmod 0700 ~/etc/ansible/hosts
