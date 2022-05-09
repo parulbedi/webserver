@@ -5,4 +5,4 @@ jobs:
     runs-on: self-hosted
     steps:
     - name: Adding host to ansible control node
-      run: sudo echo -e "this is a new line \nthis is another new line" >> /etc/ansible/hosts
+      run: sudo echo -e "this is a line" >> /etc/ansible/hosts
