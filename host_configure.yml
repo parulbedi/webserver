@@ -1,6 +1,7 @@
 name: configuring host
 on: push
 runs-on: self-hosted
+  uses: ./.github/workflows/gitactions.yml
   jobs:
   configuring_host:
     steps:
