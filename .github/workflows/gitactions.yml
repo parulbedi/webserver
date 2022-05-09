@@ -5,7 +5,9 @@ jobs:
     uses: ./.github/workflows/installing_ansible.yml
     
   reusing_install_python_workflow:
+    needs: reusing_install_ansible_workflow
     uses: ./.github/workflows/installing_python_on_managed_node.yml
     
   running_playbook:
+    needs: reusing_install_python_workflow
     uses: ./.github/workflows/adding_host.yml
