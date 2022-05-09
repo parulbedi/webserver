@@ -6,8 +6,6 @@ jobs:
      steps:
      - name: installing python via github actions
        run: |
-        cd ..
-        cd ..
         sudo apt install software-properties-common
         sudo add-apt-repository --yes --update ppa:deadsnakes/ppa
         sudo apt install python3 -y
