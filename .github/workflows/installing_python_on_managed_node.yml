@@ -6,5 +6,5 @@ jobs:
      steps:
      - name: installing python via github actions
        run: |
-        sudo apt update
+        sudo apt-get update
         sudo apt install python3 -y
