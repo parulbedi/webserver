@@ -5,4 +5,9 @@ jobs:
      runs-on: [self-hosted, managed-node]
      steps:
      - name: installing python via github actions
-       run: sudo apt install python3 -y
+       run: |
+        cd ..
+        cd ..
+        sudo apt install software-properties-common
+        sudo add-apt-repository --yes --update ppa:deadsnakes/ppa
+        sudo apt install python3 -y
