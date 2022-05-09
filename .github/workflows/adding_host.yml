@@ -1,0 +1,9 @@
+name: installing ansible from a seprate yml
+on: workflow_call
+jobs:
+  adding_host:
+    runs-on: self-hosted
+    steps:
+    - name: Adding host to ansible control node
+      run: |
+        sudo vi /etc/ansible/hosts
