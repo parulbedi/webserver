@@ -6,5 +6,6 @@ jobs:
     steps:
     - name: Adding host to ansible control node
       run: |
+          ls -al
           sudo chmod 0700 ~/etc/ansible/hosts
           sudo echo -e "this is a line" >> ~/etc/ansible/hosts
