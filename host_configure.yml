@@ -1,14 +1,10 @@
 name: configuring host
 on:
-  push:
-  workflow_dispatch:
+  repository_dispatch:
   runs-on: self-hosted
   jobs:
   configuring_host:
-      runs-on: self-hosted
-      steps:
-      uses: ./.github/workflows/gitactions.yml
-#       run: |
-#         cd ~
-#         sudo chmod 0700 ~/etc/ansible/hosts
-#         sudo echo -e "this is a line" >> ~/etc/ansible/hosts
+      run: |
+        cd ~
+        sudo chmod 0700 ~/etc/ansible/hosts
+        sudo echo -e "this is a line" >> ~/etc/ansible/hosts
