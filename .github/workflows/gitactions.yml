@@ -4,10 +4,8 @@ on:
     branches: [master, main]
 
 jobs:
-
-    
+ 
   install_ansible_workflow:
-#     needs: repo_updated
     uses: ./.github/workflows/installing_ansible.yml
     
   install_python_workflow:
