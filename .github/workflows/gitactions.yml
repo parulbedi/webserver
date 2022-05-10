@@ -8,8 +8,6 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@master
-      with:
-        github_token: ${{ secrets.WORKFLOW_TOKEN }}
         
   install_ansible:
     uses: ./.github/workflows/installing_ansible.yml
@@ -18,5 +16,5 @@ jobs:
     uses: ./.github/workflows/installing_python.yml
     
 #   adding_host:
-#     needs: install_ansible_workflow
+#     needs: install_ansible
 #     uses: ./.github/workflows/adding_host.yml
