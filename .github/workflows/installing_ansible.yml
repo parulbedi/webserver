@@ -1,4 +1,4 @@
-name: CN installing ansible
+name: CN 📦 installing ansible
 on: workflow_call
 jobs:
   installing_ansible:
