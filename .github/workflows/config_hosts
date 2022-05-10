@@ -1,0 +1,10 @@
+name: configuring hosts on CN
+on push:
+
+jobs:
+  add_host:
+    runs-on: self-hosted
+    steps:
+    - run: |
+       pwd
+       hostname
