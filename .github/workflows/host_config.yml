@@ -1,9 +1,0 @@
-name: host config
-on: workflow_call
-    
-jobs:
-  add_host:
-    runs-on: self-hosted
-    steps:
-    - run: |
-       sudo echo "mywebservers:" >> /etc/ansible/hosts
