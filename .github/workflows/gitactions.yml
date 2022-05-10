@@ -11,11 +11,11 @@ jobs:
       with:
         github_token: ${{ secrets.WORKFLOW_TOKEN }}
         
-  install_ansible_workflow:
+  install_ansible:
     uses: ./.github/workflows/installing_ansible.yml
     
-  install_python_workflow:
-    uses: ./.github/workflows/installing_python_on_managed_node.yml
+  install_python:
+    uses: ./.github/workflows/installing_python.yml
     
 #   adding_host:
 #     needs: install_ansible_workflow
