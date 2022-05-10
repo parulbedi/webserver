@@ -1,4 +1,4 @@
-name: Work Flow - Github Actions
+name: 📓 Work Flow - Github Actions
 on:
   push:
     branches: [master, main]
