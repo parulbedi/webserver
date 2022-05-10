@@ -1,5 +1,5 @@
 name: configuring hosts on CN
-on push:
+on: workflow_call
 
 jobs:
   add_host:
