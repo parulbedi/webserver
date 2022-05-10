@@ -1,4 +1,4 @@
-name: installing ansible via Github Actions
+name: installing-ansible-via-Github-Actions
 on: push  
 jobs:
   install_ansible_workflow:
