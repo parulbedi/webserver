@@ -8,18 +8,14 @@ jobs:
     steps:
     - uses: actions/checkout@master
         
-#   install_ansible:
-#     needs: repo_updated
-#     uses: ./.github/workflows/installing_ansible.yml
+  install_ansible:
+    needs: repo_updated
+    uses: ./.github/workflows/installing_ansible.yml
     
-#   install_python:
-#     needs: install_ansible
-#     uses: ./.github/workflows/installing_python.yml
+  install_python:
+    needs: install_ansible
+    uses: ./.github/workflows/installing_python.yml
     
-#   host_configure:
-#     needs: install_ansible
-#     uses: ./.github/workflows/host_config.yml
-    
-#   adding_host:
-#     needs: install_ansible
-#     uses: ./.github/workflows/adding_host.yml
+  host_configure:
+    needs: install_ansible
+    uses: ./.github/workflows/config_hosts.yml
