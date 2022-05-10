@@ -1,4 +1,4 @@
-name: installing ansible from a seprate yml
+name: CN installing ansible
 on: workflow_call
 jobs:
   installing_ansible:
