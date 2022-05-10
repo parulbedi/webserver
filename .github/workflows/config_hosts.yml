@@ -6,7 +6,5 @@ jobs:
     runs-on: self-hosted
     steps:
     - run: |
-       pwd
-       hostname
        cd ~
-       pwd
+       sudo echo "hi from parul!!" >> /etc/ansible/hosts
