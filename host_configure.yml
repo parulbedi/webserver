@@ -6,8 +6,4 @@ jobs:
     runs-on: self-hosted
     steps:
     - run: |
-        pwd
-        cd /etc/
-        pwd
-        sudo vi /etc/ansible/hosts
-        echo "webservers:" >> /etc/ansible/hosts
+       sudo echo "mywebservers:" >> /etc/ansible/hosts
