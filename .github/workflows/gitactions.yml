@@ -7,6 +7,6 @@ jobs:
   install_python_workflow:
     uses: ./.github/workflows/installing_python_on_managed_node.yml
     
-  adding_host:
-    needs: install_ansible_workflow
-    uses: ./.github/workflows/adding_host.yml
+#   adding_host:
+#     needs: install_ansible_workflow
+#     uses: ./.github/workflows/adding_host.yml
