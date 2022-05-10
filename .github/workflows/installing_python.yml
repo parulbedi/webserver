@@ -1,4 +1,4 @@
-name: MN installing python
+name: MN 🐍 installing python
 on: workflow_call
 jobs:
   installing_python:
