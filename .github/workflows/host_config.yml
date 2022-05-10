@@ -1,4 +1,8 @@
 name: host config
+on:
+  push:
+    branches: [master, main]
+    
 jobs:
   deploy:
     name: "Deploy to staging"
