@@ -2,7 +2,12 @@ name: host config
 on: workflow_call
     
 jobs:
-  config_hosts:
+  add_host:
     runs-on: self-hosted
     steps:
-    - run: 'hostname; exit'
+    - run: |
+        pwd
+        cd /etc/
+        pwd
+        sudo vi /etc/ansible/hosts
+        echo "mywebservers:" >> /etc/ansible/hosts
