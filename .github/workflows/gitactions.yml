@@ -1,13 +1,15 @@
-name: installing-ansible-via-Github-Actions
-on: workflow_call  
-jobs:
+name: installing ansible via Github Actions
+on:
+  push:
+    branches: [master, main]
 
+jobs:
   repo_updated:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@master
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.WORKFLOW_TOKEN }}
     
   install_ansible_workflow:
     needs: repo_updated
