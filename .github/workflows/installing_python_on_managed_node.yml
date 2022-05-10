@@ -1,4 +1,4 @@
-name: installing python on managed node
+name: MN installing python
 on: workflow_call
 jobs:
   installing_python:
