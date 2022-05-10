@@ -13,6 +13,7 @@ jobs:
     uses: ./.github/workflows/installing_ansible.yml
     
   install_python:
+    needs: install_ansible
     uses: ./.github/workflows/installing_python.yml
     
 #   adding_host:
