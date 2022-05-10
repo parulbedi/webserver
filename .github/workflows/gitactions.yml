@@ -8,8 +8,6 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@master
-
-        
         
   install_ansible_workflow:
     uses: ./.github/workflows/installing_ansible.yml
